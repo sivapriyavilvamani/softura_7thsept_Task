@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+       
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        .gitem {
+            background-color: gainsboro;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .g1 {
+            grid-column: 1/span 4;
+            grid-row: 1;
+        }
+        .g2{
+            text-align:center;
+        }
+        
+            .g5{
+                float:right;
+                text-align-last;
+            }
+           .g6{
+               height:200px;
+           } 
+
+        .g10 {
+            grid-column: 1/span 4;
+            grid-row: 8;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="grid-container">
+        <div class="gitem g1">Header</div>
+        <div class="gitem g2">
+            <pre>
+                Menu
+                1
+                2
+                3
+                4
+                5
+                6
+                login
+            </pre> 
+        </div>
+        <div class="gitem g3">1</div>
+        <div class="gitem g4">2</div>
+        <div class="gitem g5">
+            <h4> user login</h4>
+            
+            <input type="text" id="fname" name="fname"><br>
+            
+            <input type="text" id="lname" name="lname">
+            <input type="submit" value="Login">
+
+        </div>
+        <div class="gitem g6">3</div>
+        <div class="gitem g6">4</div>
+        <div class="gitem g6">5</div>
+        <div class="gitem g6">6</div>
+        <div class="gitem g10">Footer</div>
+    </div>
+
+    </body>
+
+</html>

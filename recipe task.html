@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0" />
+    <title>The Food Code</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .header {
+            background-color: olivedrab;
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+            color: papayawhip;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            display: flex;
+            display: -webkit-flex;
+        }
+
+        .navig {
+            width: 10%;
+            text-align: center;
+        }
+
+        .navig {
+            overflow: hidden;
+        }
+
+            .navig a {
+                float: right;
+                display: block;
+                color:darkgoldenrod;
+                text-align: center;
+                padding: 12px 16px;
+                text-decoration: blink
+            }
+
+                .navig a:hover {
+                    background-color:darkslategrey;
+                    color:darkkhaki;
+                }
+
+        .Paneer {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            text-align: left;
+            padding: 20px;
+            width =60%;
+        }
+            .Paneer h2 {
+                color: forestgreen;
+                font-family: Calibri;
+            }
+
+            .Paneer p {
+                
+                color: firebrick;
+                font-family:cursive;
+                font-size: 20px;
+            }
+
+        .responsive {
+            width: 70%;
+            height:15%;
+        }
+        .Inresponsive {
+            width: 30%;
+            height: 45%;
+        }
+        .Innrresponsive {
+            width: 40%;
+            height: 45%;
+            float:right;
+        }
+
+       
+        .Nutrition_Facts {
+            width: 18%;
+            text-align:left;               
+            background-color:lightgoldenrodyellow;
+            float: left;       
+            color:darkgreen;
+            font-family:Lucida Sans;
+            font-size:15px;
+       
+        }
+        .Preparation {
+            font-family:Lucida Handwriting;
+            font-size:50px;
+            text-align: justify;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: darkolivegreen;
+            color: floralwhite;
+        }
+    </style>
+</head>
+<body>        
+        <div class="header">
+            <h2>Priya's Recipe</h2>
+        </div>
+        <div class="row">
+            <div class="navig" style="background-color:lemonchiffon">
+
+                <a href="#">AboutMe</a>
+                <a href="#">Recipies</a>
+                <a href="#">Home</a>
+
+            </div>
+            <div class="Paneer" style="background-color:floralwhite">
+
+                <h2> Punjabi Cusine</h2>
+                <img src="images/Punjabi cusine.jpg" alt="Nature" class="responsive" />
+                <h3>Palak Paneer Authentic Punjabi Style</h3>
+                <p>
+                    Palak Paneer is the heart and soul of the Punjabi Cuisine.<br />
+                    This age-old recipe is never going to get old.<br /> However, with time and innovations in cooking, the spinach curry with paneer has improved.<br /> This recipe mainly originated from north India and settled in different Indian states.
+                    Now you know why I am telling it the heart and soul. <br />I have made a small attempt to recreate the Punjabi style authentic palak paneer recipe today. <br />
+                    I hope you will like it.
+                </p>
+                <div class="Ingridients">
+
+                    <h3>Ingredients</h3>
+                    <div class="row">
+                        <img src="images/ingridients.jpg" alt="Nature" class="Inresponsive" />
+                        <ol>
+                            <li>Palak Leaves</li>
+                            <li>Paneer</li>
+                            <li>Onion</li>
+                            <li>Tomatoes</li>
+                            <li>Chillies</li>
+                            <li>Cumin</li>
+                            <li>Ginger</li>
+                            <li>Garlic</li>
+                            <li>Garam masala</li>
+                            <li>Kasturi Methi</li>
+                            <li>Oil</li>
+                            <li>Salt</li>
+                            <li>Water</li>
+                        </ol>
+                        <img src="images/images.jpg" class="Innrresponsive"/>
+                    </div>
+                    <div class="Preparation">
+                       
+                        <p>
+                            Take blanched palak, 1 inch ginger, 1 clove garlic and 4 green chilli.
+                            Blend to smooth paste without adding any water. keep aside.
+                            now in a large kadai heat 3 tsp oil, 1 tsp butter and roast the spices till it turns aromatic.
+                            further, add ½ onion and saute till it turns golden brown
+                            additionally, add ½ tomato and saute till the tomatoes turn soft and mushy.
+                            add prepared palak paste, ¼ cup water and ¾ tsp salt.
+                            mix well adjusting consistency as required.
+                            further, add roasted paneer and mix well.
+                            simmer for 5 minutes or till paneer absorbs flavour.
+                            turn off the flame and add ¼ tsp garam masala, 1 tsp kasuri methi and 2 tbsp cream. mix well.
+                            finally, serve restaurant-style palak paneer with roti / naan.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+
+
+            <div class="Nutrition_Facts" >
+               
+                    <h2 style="font-family:Elephant">Nutri Facts</h2>
+                    <table>
+                        <tr>
+                            <th>Ingridients</th>
+                            <th>Servings</th>
+                            <th>Calories</th>
+                        </tr>
+                        <tr>
+                            <td>spinach</td>
+                            <td>66.24g</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Panneer</td>
+                            <td>66.24g</td>
+                            <td>198</td>
+                        </tr>
+                        <tr>
+                            <td>cumin seedsr</td>
+                            <td>0.26g</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>fresh ginger</td>
+                            <td>0.26g</td>
+                            <td>0</td>
+                        </tr>
+
+                    </table>
+
+                
+            </div>
+
+        </div>
+        <div class="footer">
+            <p> @copyright www.sivapriya.com</p> 
+         </div>
+</body>
+</html>

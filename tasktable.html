@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table border="1" cellpadding="5" cellspacing="5">
+        <tr>
+            <th>Book Name</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>ponniyin selvan</td>
+            <td><input type="number" id="d1" name="num1" onkeyup="addnum()"/></td>
+        </tr>
+
+        <tr>
+            <td>manidhan</td>
+            <td><input type="number" id="d2" name="num2" onkeyup="addnum()"/></td>
+        </tr>
+        <tr>
+            <td>SNSM</td>
+            <td><input type="number" id="d3" name="num3" onkeyup="addnum()"</td>
+        </tr>
+        <tr>
+            <td>SN</td>
+            <td><input type="number" id="d4" name="num4"onkeyup="addnum()"</td>
+        </tr>
+        <label id="res"></label>
+        <script>
+            $(document).ready(function () {
+                addTwonum();
+            });
+            function addnum() {
+                var n1 = $('#d1').val();
+                if (!n1) {
+                    n1 = 0;
+                }
+
+                var n2 = $('#d2').val();
+                if (!n2) {
+                    n2 = 0;
+                }
+                var n3 = $('#d3').val();
+                if (!n3) {
+                    n3 = 0;
+                }
+                var n4 = $('#d4').val();
+                if (!n4) {
+                    n4 = 0;
+                }
+
+
+                sum = (+n1) + (+n2)+(+n3)+(+n4)
+                $('#res').html(sum);
+
+
+            }
+
+        </script>
+
+        
+
+
+</body>
+</html>

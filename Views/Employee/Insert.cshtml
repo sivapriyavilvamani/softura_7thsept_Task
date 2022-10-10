@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model EmploeeTask1.Models.Employee
+
+@{
+    Layout = "_Layout";
+}
+<div>
+    <h2>Employee Details </h2>
+    <form>
+        <label for="ID">Employee ID</label><br>
+        <input type="number" id="ID" name="EmpID"><br>
+        <label for="FirstName"> FirstName:</label><br>
+        <input type="text" id="FirstName" name="FirstName"><br><br>
+        <label for="LastName"> LastName:</label><br>
+        <input type="text" id="LastName" name="LastName"><br><br>
+        <input type="radio" id="Gend" name="Gender" value="Male">
+        <label for="Male">Male</label><br>
+        <input type="radio" id="Gend" name="Gender" value="Female">
+        <label for="css">Female</label><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h6><a asp-action="allEmployeeInfo" asp-controller="Employee">NewEmployee</a></h6>
+
+</div>
